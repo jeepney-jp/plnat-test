@@ -1,0 +1,228 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap');
+
+/* カラーパレット */
+:root {
+  /* Primary Colors */
+  --primary-green: #2d5a27;
+  --secondary-green: #1e3a1a;
+  --accent-green: #7fb069;
+  --light-green: #f4f7f2;
+  
+  /* Text Colors */
+  --text-dark: #2c3e2d;
+  --text-light: #6b7c6e;
+  --text-muted: #8a9c8d;
+  
+  /* Background Colors */
+  --bg-white: #fafbfa;
+  --bg-section: #f8f9f8;
+  --bg-card: #ffffff;
+  
+  /* Border Colors */
+  --border-light: #e8ebe9;
+  --border-medium: #d4d9d5;
+  
+  /* Gradient Colors */
+  --gradient-green: linear-gradient(135deg, var(--primary-green) 0%, var(--secondary-green) 100%);
+  --gradient-light: linear-gradient(135deg, var(--light-green) 0%, var(--bg-white) 100%);
+  
+  /* Typography */
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Noto Sans JP', sans-serif;
+  
+  /* Font Weights */
+  --weight-light: 300;
+  --weight-normal: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  --spacing-3xl: 4rem;
+  
+  /* Border Radius */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(45, 90, 39, 0.05);
+  --shadow-md: 0 4px 6px rgba(45, 90, 39, 0.1);
+  --shadow-lg: 0 10px 15px rgba(45, 90, 39, 0.15);
+  --shadow-xl: 0 20px 25px rgba(45, 90, 39, 0.2);
+  
+  /* Transitions */
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+}
+
+/* Base Typography */
+body {
+  font-family: var(--font-body);
+  font-weight: var(--weight-normal);
+  line-height: 1.6;
+  color: var(--text-dark);
+  background-color: var(--bg-white);
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: var(--weight-semibold);
+  line-height: 1.3;
+  color: var(--primary-green);
+  margin-bottom: var(--spacing-md);
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: var(--weight-bold);
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: var(--weight-semibold);
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font-size: 1.875rem;
+  font-weight: var(--weight-semibold);
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: var(--weight-medium);
+}
+
+h5 {
+  font-size: 1.25rem;
+  font-weight: var(--weight-medium);
+}
+
+h6 {
+  font-size: 1.125rem;
+  font-weight: var(--weight-medium);
+}
+
+/* Paragraph and Text */
+p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--text-light);
+  margin-bottom: var(--spacing-md);
+}
+
+.lead {
+  font-size: 1.25rem;
+  font-weight: var(--weight-normal);
+  line-height: 1.6;
+  color: var(--text-dark);
+}
+
+.text-small {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.text-large {
+  font-size: 1.2rem;
+  font-weight: var(--weight-medium);
+}
+
+/* Links */
+a {
+  color: var(--primary-green);
+  text-decoration: none;
+  transition: var(--transition-fast);
+}
+
+a:hover {
+  color: var(--accent-green);
+}
+
+/* Buttons */
+.btn {
+  font-family: var(--font-body);
+  font-weight: var(--weight-medium);
+  padding: var(--spacing-md) var(--spacing-xl);
+  border-radius: var(--radius-xl);
+  border: none;
+  cursor: pointer;
+  transition: var(--transition-normal);
+  text-align: center;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.btn-primary {
+  background: var(--gradient-green);
+  color: white;
+  box-shadow: var(--shadow-md);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.btn-secondary {
+  background: var(--bg-white);
+  color: var(--primary-green);
+  border: 2px solid var(--primary-green);
+}
+
+.btn-secondary:hover {
+  background: var(--primary-green);
+  color: white;
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.25rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+  }
+  
+  p {
+    font-size: 1rem;
+  }
+  
+  .lead {
+    font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.875rem;
+  }
+  
+  h2 {
+    font-size: 1.75rem;
+  }
+  
+  h3 {
+    font-size: 1.375rem;
+  }
+}

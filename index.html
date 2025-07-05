@@ -7,6 +7,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- SVG Icons -->
+    <svg width="0" height="0" style="display:none">
+        <defs>
+            <symbol id="hamburger" viewBox="0 0 24 24">
+                <g fill="currentColor">
+                    <rect x="3" y="6" width="18" height="2" rx="1"/>
+                    <rect x="3" y="11" width="18" height="2" rx="1"/>
+                    <rect x="3" y="16" width="18" height="2" rx="1"/>
+                </g>
+            </symbol>
+            <symbol id="close" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+            </symbol>
+            <symbol id="star" viewBox="0 0 24 24">
+                <path fill="#FFD700" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+            </symbol>
+        </defs>
+    </svg>
     <header>
         <nav>
             <div class="container">
@@ -19,8 +37,35 @@
                     <li><a href="#about">私たちについて</a></li>
                     <li><a href="#contact">お問い合わせ</a></li>
                 </ul>
+                <button class="mobile-menu-toggle" aria-label="メニューを開く">
+                    <svg width="24" height="24">
+                        <use href="#hamburger"></use>
+                    </svg>
+                </button>
             </div>
         </nav>
+        
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu-overlay">
+            <div class="mobile-menu">
+                <div class="mobile-menu-header">
+                    <h2>🌿 Green Garden</h2>
+                    <button class="mobile-menu-close" aria-label="メニューを閉じる">
+                        <svg width="24" height="24">
+                            <use href="#close"></use>
+                        </svg>
+                    </button>
+                </div>
+                <nav class="mobile-nav">
+                    <ul>
+                        <li><a href="#home">ホーム</a></li>
+                        <li><a href="#plants">植物</a></li>
+                        <li><a href="#about">私たちについて</a></li>
+                        <li><a href="#contact">お問い合わせ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
 
     <main>
@@ -46,24 +91,40 @@
                         <h3>モンステラ</h3>
                         <p>大きな葉が特徴的な人気の観葉植物。初心者でも育てやすく、インテリアとしても映えます。</p>
                         <div class="price">¥2,980</div>
+                        <div class="plant-card-actions">
+                            <a href="#" class="plant-card-btn">詳しく見る</a>
+                            <a href="#" class="plant-card-btn primary">カートに入れる</a>
+                        </div>
                     </div>
                     <div class="plant-card">
                         <div class="plant-image">🌱</div>
                         <h3>パキラ</h3>
                         <p>「発財樹」とも呼ばれる縁起の良い植物。耐陰性があり、オフィスにもおすすめです。</p>
                         <div class="price">¥1,980</div>
+                        <div class="plant-card-actions">
+                            <a href="#" class="plant-card-btn">詳しく見る</a>
+                            <a href="#" class="plant-card-btn primary">カートに入れる</a>
+                        </div>
                     </div>
                     <div class="plant-card">
                         <div class="plant-image">🍃</div>
                         <h3>サンスベリア</h3>
                         <p>空気清浄効果が高く、水やりも少なくて済む丈夫な植物。忙しい方にもピッタリです。</p>
                         <div class="price">¥1,680</div>
+                        <div class="plant-card-actions">
+                            <a href="#" class="plant-card-btn">詳しく見る</a>
+                            <a href="#" class="plant-card-btn primary">カートに入れる</a>
+                        </div>
                     </div>
                     <div class="plant-card">
                         <div class="plant-image">🌾</div>
                         <h3>ウンベラータ</h3>
                         <p>大きなハート型の葉が美しい人気の観葉植物。リビングのシンボルツリーとしても最適です。</p>
                         <div class="price">¥4,980</div>
+                        <div class="plant-card-actions">
+                            <a href="#" class="plant-card-btn">詳しく見る</a>
+                            <a href="#" class="plant-card-btn primary">カートに入れる</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -93,6 +154,77 @@
                     </div>
                     <div class="about-image">
                         <div class="greenhouse-placeholder">🏡</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials">
+            <div class="container">
+                <h2>お客様の声</h2>
+                <p class="testimonials-intro">実際にGreen Gardenで植物を購入いただいたお客様の嬉しいお声をご紹介します</p>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar">
+                                <img src="https://images.unsplash.com/photo-1494790108755-2616c78e95eb?w=80&h=80&fit=crop&fm=webp" alt="田中花子さん" loading="lazy">
+                            </div>
+                            <div class="testimonial-info">
+                                <h3>田中 花子さん</h3>
+                                <div class="testimonial-rating">
+                                    <svg width="16" height="16" class="star"><use href="#star"></use></svg>
+                                    <svg width="16" height="16" class="star"><use href="#star"></use></svg>
+                                    <svg width="16" height="16" class="star"><use href="#star"></use></svg>
+                                    <svg width="16" height="16" class="star"><use href="#star"></use></svg>
+                                    <svg width="16" height="16" class="star"><use href="#star"></use></svg>
+                                </div>
+                            </div>
+                        </div>
+                        <blockquote>
+                            「初めての観葉植物でしたが、育て方のサポートがとても丁寧で安心できました。モンステラがこんなに美しく成長するとは思いませんでした。」
+                        </blockquote>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&fm=webp" alt="佐藤太郎さん" loading="lazy">
+                            </div>
+                            <div class="testimonial-info">
+                                <h3>佐藤 太郎さん</h3>
+                                <div class="testimonial-rating">
+                                    <svg width="16" height="16" class="star"><use href="#star"></use></svg>
+                                    <svg width="16" height="16" class="star"><use href="#star"></use></svg>
+                                    <svg width="16" height="16" class="star"><use href="#star"></use></svg>
+                                    <svg width="16" height="16" class="star"><use href="#star"></use></svg>
+                                    <svg width="16" height="16" class="star"><use href="#star"></use></svg>
+                                </div>
+                            </div>
+                        </div>
+                        <blockquote>
+                            「オフィス用にパキラを購入。配送がとても丁寧で、植物が傷つかないように工夫されていました。同僚からも好評です。」
+                        </blockquote>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar">
+                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop&fm=webp" alt="鈴木美咲さん" loading="lazy">
+                            </div>
+                            <div class="testimonial-info">
+                                <h3>鈴木 美咲さん</h3>
+                                <div class="testimonial-rating">
+                                    <svg width="16" height="16" class="star"><use href="#star"></use></svg>
+                                    <svg width="16" height="16" class="star"><use href="#star"></use></svg>
+                                    <svg width="16" height="16" class="star"><use href="#star"></use></svg>
+                                    <svg width="16" height="16" class="star"><use href="#star"></use></svg>
+                                    <svg width="16" height="16" class="star"><use href="#star"></use></svg>
+                                </div>
+                            </div>
+                        </div>
+                        <blockquote>
+                            「サンスベリアのお手入れの簡単さに驚きました。忙しい毎日でも緑のある生活を楽しめています。空気清浄効果も実感できています。」
+                        </blockquote>
                     </div>
                 </div>
             </div>
@@ -128,5 +260,7 @@
             <p>&copy; 2025 Green Garden. All rights reserved.</p>
         </div>
     </footer>
+    
+    <script src="script.js"></script>
 </body>
 </html>
