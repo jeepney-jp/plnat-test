@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <!-- 厳選された植物 -->
+  <symbol id="quality-plant" viewBox="0 0 48 48">
+    <path d="M24 8c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16S32.837 8 24 8zm0 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S10 31.732 10 24 16.268 10 24 10z" fill="#2d5a27"/>
+    <path d="M20 18l4 4 8-8" stroke="#2d5a27" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+
+  <!-- サポート -->
+  <symbol id="support" viewBox="0 0 48 48">
+    <circle cx="24" cy="24" r="16" fill="none" stroke="#2d5a27" stroke-width="2"/>
+    <path d="M24 18v12" stroke="#2d5a27" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="24" cy="34" r="1" fill="#2d5a27"/>
+  </symbol>
+
+  <!-- 配送 -->
+  <symbol id="delivery" viewBox="0 0 48 48">
+    <path d="M8 36h4m16 0h4m-16 0c0-2.21 1.79-4 4-4s4 1.79 4 4m-8 0c0-2.21 1.79-4 4-4s4 1.79 4 4m-8 0H8m24 0h8V18H16v18z" fill="none" stroke="#2d5a27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="20" cy="36" r="2" fill="none" stroke="#2d5a27" stroke-width="2"/>
+    <circle cx="28" cy="36" r="2" fill="none" stroke="#2d5a27" stroke-width="2"/>
+  </symbol>
+
+  <!-- ハンバーガーメニュー -->
+  <symbol id="hamburger" viewBox="0 0 24 24">
+    <path d="M3 12h18m-18-6h18m-18 12h18" stroke="#2d5a27" stroke-width="2" stroke-linecap="round"/>
+  </symbol>
+
+  <!-- 閉じる -->
+  <symbol id="close" viewBox="0 0 24 24">
+    <path d="M18 6L6 18m12 0L6 6" stroke="#2d5a27" stroke-width="2" stroke-linecap="round"/>
+  </symbol>
+
+  <!-- 右矢印 -->
+  <symbol id="arrow-right" viewBox="0 0 24 24">
+    <path d="M9 18l6-6-6-6" stroke="#2d5a27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+
+  <!-- 星 -->
+  <symbol id="star" viewBox="0 0 24 24">
+    <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26" fill="#ffd700" stroke="#ffd700" stroke-width="1"/>
+  </symbol>
+</svg>

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Garden - 観葉植物専門店</title>
+    <meta name="description" content="観葉植物専門店Green Gardenです。高品質な観葉植物を豊富に取り揃え、初心者から上級者まで安心してお買い物いただけます。">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="typography.css">
+</head>
+<body>
+    <!-- SVGアイコン -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <!-- 厳選された植物 -->
+        <symbol id="quality-plant" viewBox="0 0 48 48">
+            <path d="M24 8c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16S32.837 8 24 8zm0 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S10 31.732 10 24 16.268 10 24 10z" fill="#2d5a27"/>
+            <path d="M20 18l4 4 8-8" stroke="#2d5a27" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </symbol>
+
+        <!-- サポート -->
+        <symbol id="support" viewBox="0 0 48 48">
+            <circle cx="24" cy="24" r="16" fill="none" stroke="#2d5a27" stroke-width="2"/>
+            <path d="M24 18v12" stroke="#2d5a27" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="24" cy="34" r="1" fill="#2d5a27"/>
+        </symbol>
+
+        <!-- 配送 -->
+        <symbol id="delivery" viewBox="0 0 48 48">
+            <path d="M8 36h4m16 0h4m-16 0c0-2.21 1.79-4 4-4s4 1.79 4 4m-8 0c0-2.21 1.79-4 4-4s4 1.79 4 4m-8 0H8m24 0h8V18H16v18z" fill="none" stroke="#2d5a27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="20" cy="36" r="2" fill="none" stroke="#2d5a27" stroke-width="2"/>
+            <circle cx="28" cy="36" r="2" fill="none" stroke="#2d5a27" stroke-width="2"/>
+        </symbol>
+
+        <!-- ハンバーガーメニュー -->
+        <symbol id="hamburger" viewBox="0 0 24 24">
+            <path d="M3 12h18m-18-6h18m-18 12h18" stroke="#2d5a27" stroke-width="2" stroke-linecap="round"/>
+        </symbol>
+
+        <!-- 閉じる -->
+        <symbol id="close" viewBox="0 0 24 24">
+            <path d="M18 6L6 18m12 0L6 6" stroke="#2d5a27" stroke-width="2" stroke-linecap="round"/>
+        </symbol>
+
+        <!-- 右矢印 -->
+        <symbol id="arrow-right" viewBox="0 0 24 24">
+            <path d="M9 18l6-6-6-6" stroke="#2d5a27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </symbol>
+
+        <!-- 星 -->
+        <symbol id="star" viewBox="0 0 24 24">
+            <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26" fill="#ffd700" stroke="#ffd700" stroke-width="1"/>
+        </symbol>
+    </svg>
+
+    <!-- ヘッダー -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="logo">
+                    <a href="#" class="logo-link">Green Garden</a>
+                </h1>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#plants" class="nav-link">植物</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link">私たちについて</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link">お問い合わせ</a></li>
+                    </ul>
+                </nav>
+                <button class="mobile-menu-toggle" aria-label="メニューを開く">
+                    <svg width="24" height="24">
+                        <use href="#hamburger"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- モバイルメニュー -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-content">
+            <button class="mobile-menu-close" aria-label="メニューを閉じる">
+                <svg width="24" height="24">
+                    <use href="#close"></use>
+                </svg>
+            </button>
+            <nav class="mobile-nav">
+                <ul class="mobile-nav-list">
+                    <li class="mobile-nav-item"><a href="#plants" class="mobile-nav-link">植物</a></li>
+                    <li class="mobile-nav-item"><a href="#about" class="mobile-nav-link">私たちについて</a></li>
+                    <li class="mobile-nav-item"><a href="#contact" class="mobile-nav-link">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="mobile-menu-overlay"></div>
+    </div>
+
+    <!-- メインコンテンツ -->
+    <main class="main">
+        <!-- ヒーローセクション -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2 class="hero-title">あなたの空間を<br>緑で彩る</h2>
+                    <p class="hero-description">
+                        Green Gardenは、厳選された観葉植物を提供する専門店です。初心者から上級者まで、あなたのライフスタイルに合った植物を見つけることができます。
+                    </p>
+                    <a href="#plants" class="hero-cta">植物を見る</a>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-image-placeholder">🌿</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 人気の植物セクション -->
+        <section id="plants" class="plants">
+            <div class="container">
+                <h2 class="section-title">人気の植物</h2>
+                <div class="plants-grid">
+                    <div class="plant-card" data-product="monstera">
+                        <div class="plant-image">
+                            <div class="plant-image-placeholder">🌱</div>
+                        </div>
+                        <div class="plant-info">
+                            <h3 class="plant-name">モンステラ</h3>
+                            <p class="plant-description">大きな葉が特徴的な人気の観葉植物。初心者でも育てやすく、インテリアとしても映えます。</p>
+                            <div class="plant-price">¥2,980</div>
+                        </div>
+                    </div>
+                    <div class="plant-card">
+                        <div class="plant-image">
+                            <div class="plant-image-placeholder">🌿</div>
+                        </div>
+                        <div class="plant-info">
+                            <h3 class="plant-name">パキラ</h3>
+                            <p class="plant-description">手を広げたような葉が美しく、金運アップの効果があるとされています。</p>
+                            <div class="plant-price">¥1,800</div>
+                        </div>
+                    </div>
+                    <div class="plant-card">
+                        <div class="plant-image">
+                            <div class="plant-image-placeholder">🪴</div>
+                        </div>
+                        <div class="plant-info">
+                            <h3 class="plant-name">サンスベリア</h3>
+                            <p class="plant-description">空気清浄効果が高く、乾燥に強いため手入れが簡単です。</p>
+                            <div class="plant-price">¥1,500</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 私たちについてセクション -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2 class="section-title">私たちについて</h2>
+                        <p class="about-description">
+                            Green Gardenは、植物愛好家によって設立された観葉植物専門店です。私たちは、高品質な植物を厳選し、お客様一人ひとりに最適な植物をご提案します。
+                        </p>
+                        <div class="features">
+                            <div class="feature">
+                                <div class="feature-icon">
+                                    <svg width="48" height="48">
+                                        <use href="#quality-plant"></use>
+                                    </svg>
+                                </div>
+                                <div class="feature-content">
+                                    <h3 class="feature-title">厳選された植物</h3>
+                                    <p class="feature-description">専門スタッフが厳選した高品質な植物のみを取り扱っています。</p>
+                                </div>
+                            </div>
+                            <div class="feature">
+                                <div class="feature-icon">
+                                    <svg width="48" height="48">
+                                        <use href="#support"></use>
+                                    </svg>
+                                </div>
+                                <div class="feature-content">
+                                    <h3 class="feature-title">専門サポート</h3>
+                                    <p class="feature-description">植物の専門知識を持つスタッフが、育て方をサポートします。</p>
+                                </div>
+                            </div>
+                            <div class="feature">
+                                <div class="feature-icon">
+                                    <svg width="48" height="48">
+                                        <use href="#delivery"></use>
+                                    </svg>
+                                </div>
+                                <div class="feature-content">
+                                    <h3 class="feature-title">安心配送</h3>
+                                    <p class="feature-description">植物に優しい専用梱包で、安全にお届けします。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <div class="about-image-placeholder">🌳</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- お客様の声セクション -->
+        <section class="testimonials">
+            <div class="container">
+                <h2 class="section-title">お客様の声</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <svg class="star" width="16" height="16">
+                                <use href="#star"></use>
+                            </svg>
+                            <svg class="star" width="16" height="16">
+                                <use href="#star"></use>
+                            </svg>
+                            <svg class="star" width="16" height="16">
+                                <use href="#star"></use>
+                            </svg>
+                            <svg class="star" width="16" height="16">
+                                <use href="#star"></use>
+                            </svg>
+                            <svg class="star" width="16" height="16">
+                                <use href="#star"></use>
+                            </svg>
+                        </div>
+                        <p class="testimonial-text">初めての観葉植物購入でしたが、スタッフの方が丁寧に説明してくれて、とても満足しています。植物も元気で美しいです。</p>
+                        <div class="testimonial-author">田中 美香 様</div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <svg class="star" width="16" height="16">
+                                <use href="#star"></use>
+                            </svg>
+                            <svg class="star" width="16" height="16">
+                                <use href="#star"></use>
+                            </svg>
+                            <svg class="star" width="16" height="16">
+                                <use href="#star"></use>
+                            </svg>
+                            <svg class="star" width="16" height="16">
+                                <use href="#star"></use>
+                            </svg>
+                            <svg class="star" width="16" height="16">
+                                <use href="#star"></use>
+                            </svg>
+                        </div>
+                        <p class="testimonial-text">配送も迅速で、梱包も丁寧でした。おかげで植物が元気な状態で届きました。また利用したいと思います。</p>
+                        <div class="testimonial-author">佐藤 健一 様</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- お問い合わせセクション -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">お問い合わせ</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <h3>店舗情報</h3>
+                            <p>〒123-4567<br>東京都渋谷区緑町1-2-3<br>Green Garden本店</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3>営業時間</h3>
+                            <p>平日：10:00 - 19:00<br>土日祝：10:00 - 18:00<br>定休日：毎週水曜日</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3>お電話</h3>
+                            <p>03-1234-5678</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3>メール</h3>
+                            <p>info@greengarden.jp</p>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form class="form">
+                            <div class="form-group">
+                                <label for="name" class="form-label">お名前</label>
+                                <input type="text" id="name" name="name" class="form-input" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="form-label">メールアドレス</label>
+                                <input type="email" id="email" name="email" class="form-input" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="form-label">お問い合わせ内容</label>
+                                <textarea id="message" name="message" class="form-textarea" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="form-submit">送信する</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Green Garden</h3>
+                    <p class="footer-text">あなたの空間を緑で彩る観葉植物専門店</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">ナビゲーション</h4>
+                    <ul class="footer-links">
+                        <li><a href="#plants" class="footer-link">植物</a></li>
+                        <li><a href="#about" class="footer-link">私たちについて</a></li>
+                        <li><a href="#contact" class="footer-link">お問い合わせ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">お問い合わせ</h4>
+                    <ul class="footer-links">
+                        <li class="footer-link">03-1234-5678</li>
+                        <li class="footer-link">info@greengarden.jp</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Green Garden. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

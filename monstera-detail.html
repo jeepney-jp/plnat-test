@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>モンステラ - 商品詳細 | Green Garden</title>
+    <meta name="description" content="モンステラの詳細情報。大きな葉が特徴的な人気の観葉植物。初心者でも育てやすく、インテリアとしても映えます。">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="typography.css">
+</head>
+<body>
+    <!-- SVGアイコン -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <!-- 厳選された植物 -->
+        <symbol id="quality-plant" viewBox="0 0 48 48">
+            <path d="M24 8c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16S32.837 8 24 8zm0 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S10 31.732 10 24 16.268 10 24 10z" fill="#2d5a27"/>
+            <path d="M20 18l4 4 8-8" stroke="#2d5a27" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </symbol>
+
+        <!-- サポート -->
+        <symbol id="support" viewBox="0 0 48 48">
+            <circle cx="24" cy="24" r="16" fill="none" stroke="#2d5a27" stroke-width="2"/>
+            <path d="M24 18v12" stroke="#2d5a27" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="24" cy="34" r="1" fill="#2d5a27"/>
+        </symbol>
+
+        <!-- 配送 -->
+        <symbol id="delivery" viewBox="0 0 48 48">
+            <path d="M8 36h4m16 0h4m-16 0c0-2.21 1.79-4 4-4s4 1.79 4 4m-8 0c0-2.21 1.79-4 4-4s4 1.79 4 4m-8 0H8m24 0h8V18H16v18z" fill="none" stroke="#2d5a27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="20" cy="36" r="2" fill="none" stroke="#2d5a27" stroke-width="2"/>
+            <circle cx="28" cy="36" r="2" fill="none" stroke="#2d5a27" stroke-width="2"/>
+        </symbol>
+
+        <!-- ハンバーガーメニュー -->
+        <symbol id="hamburger" viewBox="0 0 24 24">
+            <path d="M3 12h18m-18-6h18m-18 12h18" stroke="#2d5a27" stroke-width="2" stroke-linecap="round"/>
+        </symbol>
+
+        <!-- 閉じる -->
+        <symbol id="close" viewBox="0 0 24 24">
+            <path d="M18 6L6 18m12 0L6 6" stroke="#2d5a27" stroke-width="2" stroke-linecap="round"/>
+        </symbol>
+
+        <!-- 右矢印 -->
+        <symbol id="arrow-right" viewBox="0 0 24 24">
+            <path d="M9 18l6-6-6-6" stroke="#2d5a27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </symbol>
+
+        <!-- 星 -->
+        <symbol id="star" viewBox="0 0 24 24">
+            <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26" fill="#ffd700" stroke="#ffd700" stroke-width="1"/>
+        </symbol>
+
+        <!-- 戻る矢印 -->
+        <symbol id="arrow-left" viewBox="0 0 24 24">
+            <path d="M15 18l-6-6 6-6" stroke="#2d5a27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </symbol>
+    </svg>
+
+    <!-- ヘッダー -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="logo">
+                    <a href="index.html" class="logo-link">Green Garden</a>
+                </h1>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="index.html#plants" class="nav-link">植物</a></li>
+                        <li class="nav-item"><a href="index.html#about" class="nav-link">私たちについて</a></li>
+                        <li class="nav-item"><a href="index.html#contact" class="nav-link">お問い合わせ</a></li>
+                    </ul>
+                </nav>
+                <button class="mobile-menu-toggle" aria-label="メニューを開く">
+                    <svg width="24" height="24">
+                        <use href="#hamburger"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- モバイルメニュー -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-content">
+            <button class="mobile-menu-close" aria-label="メニューを閉じる">
+                <svg width="24" height="24">
+                    <use href="#close"></use>
+                </svg>
+            </button>
+            <nav class="mobile-nav">
+                <ul class="mobile-nav-list">
+                    <li class="mobile-nav-item"><a href="index.html#plants" class="mobile-nav-link">植物</a></li>
+                    <li class="mobile-nav-item"><a href="index.html#about" class="mobile-nav-link">私たちについて</a></li>
+                    <li class="mobile-nav-item"><a href="index.html#contact" class="mobile-nav-link">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="mobile-menu-overlay"></div>
+    </div>
+
+    <!-- メインコンテンツ -->
+    <main class="main">
+        <!-- パンくずナビ -->
+        <section class="breadcrumb">
+            <div class="container">
+                <nav class="breadcrumb-nav">
+                    <a href="index.html" class="breadcrumb-link">ホーム</a>
+                    <span class="breadcrumb-separator">></span>
+                    <a href="index.html#plants" class="breadcrumb-link">植物</a>
+                    <span class="breadcrumb-separator">></span>
+                    <span class="breadcrumb-current">モンステラ</span>
+                </nav>
+            </div>
+        </section>
+
+        <!-- 商品詳細セクション -->
+        <section class="product-detail">
+            <div class="container">
+                <div class="product-detail-content">
+                    <!-- 商品画像 -->
+                    <div class="product-image">
+                        <div class="product-image-main">
+                            <div class="product-image-placeholder">🌱</div>
+                        </div>
+                        <div class="product-image-thumbnails">
+                            <div class="thumbnail active">
+                                <div class="thumbnail-placeholder">🌱</div>
+                            </div>
+                            <div class="thumbnail">
+                                <div class="thumbnail-placeholder">🌿</div>
+                            </div>
+                            <div class="thumbnail">
+                                <div class="thumbnail-placeholder">🪴</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 商品情報 -->
+                    <div class="product-info">
+                        <h1 class="product-title">モンステラ</h1>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <svg class="star" width="16" height="16">
+                                    <use href="#star"></use>
+                                </svg>
+                                <svg class="star" width="16" height="16">
+                                    <use href="#star"></use>
+                                </svg>
+                                <svg class="star" width="16" height="16">
+                                    <use href="#star"></use>
+                                </svg>
+                                <svg class="star" width="16" height="16">
+                                    <use href="#star"></use>
+                                </svg>
+                                <svg class="star" width="16" height="16">
+                                    <use href="#star"></use>
+                                </svg>
+                            </div>
+                            <span class="rating-count">(24件のレビュー)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">¥2,980</span>
+                            <span class="price-original">¥3,480</span>
+                        </div>
+                        <div class="product-description">
+                            <p>大きな葉が特徴的な人気の観葉植物。初心者でも育てやすく、インテリアとしても映えます。自然な切れ込みが入った個性的な葉は、お部屋に南国のリゾート感を演出します。</p>
+                        </div>
+                        <div class="product-features">
+                            <div class="feature-item">
+                                <svg class="feature-icon" width="20" height="20">
+                                    <use href="#quality-plant"></use>
+                                </svg>
+                                <span>初心者向け</span>
+                            </div>
+                            <div class="feature-item">
+                                <svg class="feature-icon" width="20" height="20">
+                                    <use href="#support"></use>
+                                </svg>
+                                <span>育て方サポート付き</span>
+                            </div>
+                            <div class="feature-item">
+                                <svg class="feature-icon" width="20" height="20">
+                                    <use href="#delivery"></use>
+                                </svg>
+                                <span>安心配送</span>
+                            </div>
+                        </div>
+                        <div class="product-actions">
+                            <div class="quantity-selector">
+                                <label for="quantity">数量:</label>
+                                <select id="quantity" name="quantity">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                            <button class="add-to-cart-btn">カートに追加</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 商品詳細情報 -->
+        <section class="product-details">
+            <div class="container">
+                <div class="product-tabs">
+                    <button class="tab-button active" data-tab="description">商品説明</button>
+                    <button class="tab-button" data-tab="care">育て方</button>
+                    <button class="tab-button" data-tab="shipping">配送・返品</button>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="description">
+                        <h3>商品説明</h3>
+                        <p>モンステラは、その独特な葉の形状で人気の観葉植物です。葉に自然な切れ込みが入り、大きく成長すると穴が開くことから「窓の植物」とも呼ばれています。</p>
+                        <ul>
+                            <li>学名：Monstera deliciosa</li>
+                            <li>科名：サトイモ科</li>
+                            <li>原産地：中南米</li>
+                            <li>鉢サイズ：6号鉢（直径約18cm）</li>
+                            <li>植物の高さ：約50-70cm</li>
+                        </ul>
+                        <p>つる性植物で、支柱に這わせることで上向きに成長させることができます。葉の美しさだけでなく、空気清浄効果も期待できる実用的な観葉植物です。</p>
+                    </div>
+                    <div class="tab-pane" id="care">
+                        <h3>育て方</h3>
+                        <div class="care-section">
+                            <h4>日当たり</h4>
+                            <p>明るい日陰を好みます。直射日光は葉焼けの原因となるため、レースのカーテン越しの光が最適です。</p>
+                        </div>
+                        <div class="care-section">
+                            <h4>水やり</h4>
+                            <p>土の表面が乾いたらたっぷりと水を与えます。冬場は控えめに、夏場は頻繁に水やりを行います。</p>
+                        </div>
+                        <div class="care-section">
+                            <h4>温度</h4>
+                            <p>15-25℃が適温です。10℃以下になると成長が停止するため、冬場は室内で管理してください。</p>
+                        </div>
+                        <div class="care-section">
+                            <h4>湿度</h4>
+                            <p>高湿度を好みます。乾燥する時期は霧吹きで葉水を与えると良いでしょう。</p>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="shipping">
+                        <h3>配送・返品について</h3>
+                        <div class="shipping-section">
+                            <h4>配送について</h4>
+                            <p>植物専用の梱包材を使用し、丁寧に梱包してお届けします。</p>
+                            <ul>
+                                <li>配送料：全国一律800円</li>
+                                <li>5,000円以上のご注文で送料無料</li>
+                                <li>お届け日時指定可能</li>
+                                <li>午前中、14-16時、16-18時、18-20時、19-21時</li>
+                            </ul>
+                        </div>
+                        <div class="shipping-section">
+                            <h4>返品について</h4>
+                            <p>商品到着後7日以内であれば、未開封の場合に限り返品を承ります。</p>
+                            <ul>
+                                <li>返品送料：お客様負担</li>
+                                <li>植物の特性上、お客様都合による返品はお受けできません</li>
+                                <li>輸送中の破損は交換対応いたします</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 関連商品 -->
+        <section class="related-products">
+            <div class="container">
+                <h2 class="section-title">関連商品</h2>
+                <div class="related-products-grid">
+                    <div class="plant-card">
+                        <div class="plant-image">
+                            <div class="plant-image-placeholder">🌿</div>
+                        </div>
+                        <div class="plant-info">
+                            <h3 class="plant-name">パキラ</h3>
+                            <p class="plant-description">手を広げたような葉が美しく、金運アップの効果があるとされています。</p>
+                            <div class="plant-price">¥1,800</div>
+                        </div>
+                    </div>
+                    <div class="plant-card">
+                        <div class="plant-image">
+                            <div class="plant-image-placeholder">🪴</div>
+                        </div>
+                        <div class="plant-info">
+                            <h3 class="plant-name">サンスベリア</h3>
+                            <p class="plant-description">空気清浄効果が高く、乾燥に強いため手入れが簡単です。</p>
+                            <div class="plant-price">¥1,500</div>
+                        </div>
+                    </div>
+                    <div class="plant-card">
+                        <div class="plant-image">
+                            <div class="plant-image-placeholder">🌱</div>
+                        </div>
+                        <div class="plant-info">
+                            <h3 class="plant-name">フィカス・ウンベラータ</h3>
+                            <p class="plant-description">ハート型の大きな葉が特徴的で、インテリアグリーンとして人気です。</p>
+                            <div class="plant-price">¥3,800</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Green Garden</h3>
+                    <p class="footer-text">あなたの空間を緑で彩る観葉植物専門店</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">ナビゲーション</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#plants" class="footer-link">植物</a></li>
+                        <li><a href="index.html#about" class="footer-link">私たちについて</a></li>
+                        <li><a href="index.html#contact" class="footer-link">お問い合わせ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">お問い合わせ</h4>
+                    <ul class="footer-links">
+                        <li class="footer-link">03-1234-5678</li>
+                        <li class="footer-link">info@greengarden.jp</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Green Garden. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
